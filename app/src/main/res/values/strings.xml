@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name">Kalkulator BMI</string>
     <string name="tv_title">Kalkulator BMI</string>
     <string name="et_weight">Podaj wagę (kg): </string>
     <string name="et_height">Podaj wzrost (cm): </string>
