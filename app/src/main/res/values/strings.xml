@@ -4,5 +4,9 @@
     <string name="et_height">Podaj wzrost (cm): </string>
     <string name="btn_calculate">Policz</string>
     <string name="error_wrong_data">Podano nieprawidłowe dane</string>
-
+    <string name="BMI_txt">Twoje BMI wynosi %1$s!</string>
+    <string name="BMI_cat_txt">Masz %1$s!</string>
+    <string name="BMI_over">Nadwage</string>
+    <string name="BMI_normal">Nic</string>
+    <string name="BMI_under">Niedowage</string>
 </resources>
