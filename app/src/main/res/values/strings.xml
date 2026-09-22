@@ -3,4 +3,6 @@
     <string name="et_weight">Podaj wagę (kg): </string>
     <string name="et_height">Podaj wzrost (cm): </string>
     <string name="btn_calculate">Policz</string>
+    <string name="error_wrong_data">Podano nieprawidłowe dane</string>
+
 </resources>
