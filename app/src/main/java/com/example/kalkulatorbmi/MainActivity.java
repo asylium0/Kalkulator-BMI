@@ -1,6 +1,9 @@
 package com.example.kalkulatorbmi;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +12,11 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-
+    EditText evWeight;
+    EditText evHeight;
+    Button btnCalculate;
+    TextView tvBMI;
+    TextView tvBMICategory;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,5 +27,11 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        evWeight = findViewById(R.id.evWeight);
+        evHeight = findViewById(R.id.evHeight);
+        btnCalculate =  findViewById(R.id.btnCalculate);
+        tvBMI = findViewById(R.id.tvBMI);
+        tvBMICategory = findViewById(R.id.tvBMICategory);
+
     }
 }
