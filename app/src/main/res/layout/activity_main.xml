@@ -21,23 +21,23 @@
         app:layout_constraintVertical_bias="0.071" />
 
     <EditText
-        android:id="@+id/evWeight"
+        android:id="@+id/etWeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
         android:ems="10"
-        android:hint="@string/ev_weight"
+        android:hint="@string/et_weight"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
 
     <EditText
-        android:id="@+id/evHeight"
+        android:id="@+id/etHeight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
         android:ems="10"
-        android:hint="@string/ev_height"
+        android:hint="@string/et_height"
         android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
@@ -51,7 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/evHeight" />
+        app:layout_constraintTop_toBottomOf="@+id/etHeight" />
 
     <TextView
         android:id="@+id/tvBMI"

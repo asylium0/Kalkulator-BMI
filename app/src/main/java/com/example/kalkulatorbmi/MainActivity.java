@@ -12,8 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    EditText evWeight;
-    EditText evHeight;
+    EditText etWeight;
+    EditText etHeight;
     Button btnCalculate;
     TextView tvBMI;
     TextView tvBMICategory;
@@ -27,11 +27,13 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        evWeight = findViewById(R.id.evWeight);
-        evHeight = findViewById(R.id.evHeight);
+        etWeight = findViewById(R.id.etWeight);
+        etHeight = findViewById(R.id.etHeight);
         btnCalculate =  findViewById(R.id.btnCalculate);
         tvBMI = findViewById(R.id.tvBMI);
         tvBMICategory = findViewById(R.id.tvBMICategory);
 
+
     }
+
 }
