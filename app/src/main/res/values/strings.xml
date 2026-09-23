@@ -8,6 +8,6 @@
     <string name="BMI_txt">Twoje BMI wynosi %1$s!</string>
     <string name="BMI_cat_txt">Masz %1$s!</string>
     <string name="BMI_over">Nadwage</string>
-    <string name="BMI_normal">Nic</string>
+    <string name="BMI_normal">Poprawną wagę</string>
     <string name="BMI_under">Niedowage</string>
 </resources>
