@@ -40,8 +40,14 @@ public class MainActivity extends AppCompatActivity {
     }
     private void Calculate(){
         String Cat;
-        Double Height = Double.parseDouble(etHeight.getText().toString().trim());
-        Double Weight = Double.parseDouble(etWeight.getText().toString().trim());
+        String HeightStr = etHeight.getText().toString().trim();
+        String WeightStr = etWeight.getText().toString().trim();
+        if (HeightStr.isEmpty() || WeightStr.isEmpty()){
+            Toast.makeText(this, R.string.error_wrong_data, Toast.LENGTH_SHORT).show();
+            return;
+        }
+        Double Height = Double.parseDouble(HeightStr);
+        Double Weight = Double.parseDouble(WeightStr);
         if (Height <= 0 || Weight <= 0){
             Toast.makeText(this, R.string.error_wrong_data, Toast.LENGTH_SHORT).show();
             return;
