@@ -1,6 +1,7 @@
 package com.example.kalkulatorbmi;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -39,25 +40,27 @@ public class MainActivity extends AppCompatActivity {
     }
     private void Calculate(){
         String Cat;
-        int Height = Integer.parseInt(etHeight.getText().toString().trim());
-        int Weight = Integer.parseInt(etWeight.getText().toString().trim());
+        Double Height = Double.parseDouble(etHeight.getText().toString().trim());
+        Double Weight = Double.parseDouble(etWeight.getText().toString().trim());
         if (Height <= 0 || Weight <= 0){
             Toast.makeText(this, R.string.error_wrong_data, Toast.LENGTH_SHORT).show();
             return;
         }
-
-        double BMI = Weight/(Height*Height);
-        String BMIString = String.format("%.1f", String.valueOf(BMI));
+        Log.d("MainActivity", "height = " + Height + " weight = " + Weight);
+        double BMI = Weight/(Height/100*Height/100);
+        Log.d("MainActivity", "BMI = " + BMI);
+        String BMIString = String.format("%.1f", BMI);
 
         tvBMI.setText(getString(R.string.BMI_txt, BMIString));
 
         if(BMI < 18.5){
-            Cat = String.valueOf(R.string.BMI_under);
+            Cat = getString(R.string.BMI_under);
         }else if (BMI >= 25){
-            Cat = String.valueOf(R.string.BMI_over);
+            Cat = getString(R.string.BMI_over);
         }else {
-            Cat = String.valueOf(R.string.BMI_normal);
+            Cat = getString(R.string.BMI_normal);
         }
+
         tvBMICategory.setText(getString(R.string.BMI_cat_txt, Cat));
     }
 }
